@@ -4,7 +4,8 @@
 
 using std::string;
 using std::ostream;
-  
+
+// constructor simply initializes member variables
 Inventory::Inventory(string name, float price, int count)
 {
   m_name = name;
@@ -12,6 +13,7 @@ Inventory::Inventory(string name, float price, int count)
   m_in_stock = count;
 }
 
+// sell() decrements the quantity of the item
 void Inventory::sell()
 {
   if (m_in_stock > 0) {
@@ -21,6 +23,7 @@ void Inventory::sell()
   }
 }
 
+// stream extraction operator overload for convenient printing to screen
 ostream& operator<<(ostream& stream, const Inventory& item)
 {
   stream << item.m_name 
