@@ -1,4 +1,5 @@
 # Inventory Manager
+[![Build Status](https://travis-ci.org/cpwilsonChico/Inventory.svg?branch=master)](https://travis-ci.org/cpwilsonChico/Inventory)
 
 ## Installation
 To use this project, navigate to [our GitHub page](https://github.com/ChicoState/Inventory) and click download. Then, type `make` to build the project.
